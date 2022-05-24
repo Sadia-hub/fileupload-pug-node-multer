@@ -26,6 +26,8 @@ html
                         th #
                         th Name 
                         th Image
+                        th View 
+                        th Delete
 
                 tbody
 
@@ -36,3 +38,13 @@ html
                             td #{user.name}
                             td 
                                 img(src=image width="100px")
+                            td 
+                                button(class="btn btn-primary" name="view" onclick="view") View
+                            td 
+                                button(class="btn btn-primary" name="edit") Edit
+
+
+script 
+    const view = function()
+        alert("Hi")
+    
